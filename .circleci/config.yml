@@ -11,8 +11,8 @@ jobs:
     machine:
       image: ubuntu-2004:202010-01
     environment:
-      - FRONT_IMAGE: 'keikakuin1/web'
-      - APP_IMAGE: 'keikakuin1/application'
+      - FRONT_IMAGE: 'tekine/web'
+      - APP_IMAGE: 'tekine/application'
       - CI: ""
     steps:
       - checkout
