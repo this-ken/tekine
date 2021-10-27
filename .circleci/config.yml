@@ -11,8 +11,8 @@ jobs:
     machine:
       image: ubuntu-2004:202010-01
     environment:
-      - FRONT_IMAGE: 'tuimac/web'
-      - APP_IMAGE: 'tuimac/application'
+      - FRONT_IMAGE: 'keikakuin1/web'
+      - APP_IMAGE: 'keikakuin1/application'
       - CI: ""
     steps:
       - checkout
