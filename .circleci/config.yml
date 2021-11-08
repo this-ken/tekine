@@ -75,7 +75,7 @@ jobs:
             aws ssm send-command \
               --targets Key=tag:Deploy,Values=yes \
               --document-name 'AWS-RunShellScript' \
-              --parameters 'commands=/home/ec2-user/react-django/docker/prod/deploy.sh'
+              --parameters 'commands=/home/ec2-user/tekine/docker/prod/deploy.sh'
 workflows:
   version: 2.1
   react-django:
