@@ -1,6 +1,27 @@
-#!/bin/bash
+#/bin/bash
 
-docker-compose down
-docker rmi tuimac/web
-docker rmi tuimac/application
-docker-compose up -d
+DOCKER_ID='tuimac'
+
+function create_env(){
+    docker-compose up -d
+}
+
+function delete_env(){
+    docker-compose down
+    docker rmi ${DOCKER_ID}/web
+    docker rmi ${DOCKER_ID}/application
+}
+
+function renew_project(){
+    cd ../..
+    git pull
+    cd docker/prod
+}
+
+function main(){
+    renew_project
+    delete_env
+    create_env
+}
+
+main

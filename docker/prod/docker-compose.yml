@@ -1,17 +1,5 @@
 version: '3.9'
 services:
-  mysql:
-    image: mysql
-    container_name: database
-    environment:
-      MYSQL_USER: test
-      MYSQL_PASSWORD: password
-      MYSQL_DATABASE: test
-      MYSQL_RANDOM_ROOT_PASSWORD: 'true'
-    expose:
-      - 3306
-    networks:
-      - react-django
   application:
     image: tuimac/application
     container_name: application
@@ -26,6 +14,8 @@ services:
     restart: always
     ports:
       - 80:80
+    environment:
+      - DB_PASSWORD=keikakuin1
     networks:
       - react-django
 networks:
