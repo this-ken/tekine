@@ -19,3 +19,6 @@ RUN apk update && \
     npm update --force
 
 ENTRYPOINT ["/root/entrypoint.sh"]
+
+
+

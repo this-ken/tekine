@@ -7,3 +7,4 @@ class Item(models.Model):
     class Meta:
         db_table = 'ITEMS'
         managed = False
+

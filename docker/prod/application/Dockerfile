@@ -14,3 +14,6 @@ RUN apk update && \
     pip3 install -r requirements.txt
 
 ENTRYPOINT ["/root/entrypoint.sh"]
+
+
+

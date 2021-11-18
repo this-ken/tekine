@@ -5,3 +5,6 @@ urlpatterns = [
     #path('admin/', admin.site.urls),
     path(r'api/item/', include('item.urls'))
 ]
+
+
+

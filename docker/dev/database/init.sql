@@ -11,3 +11,6 @@ INSERT INTO ITEMS (name, count, owner) VALUES ('book', 1, 'John');
 INSERT INTO ITEMS (name, count, owner) VALUES ('cup', 3, 'Jully');
 INSERT INTO ITEMS (name, count, owner) VALUES ('card', 100, 'Mike');
 INSERT INTO ITEMS (name, count, owner) VALUES ('bike', 1, 'Bob');
+
+
+

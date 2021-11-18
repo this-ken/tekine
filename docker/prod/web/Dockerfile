@@ -4,3 +4,6 @@ EXPOSE 80
 
 ADD nginx.conf /etc/nginx/nginx.conf
 ADD build /usr/share/nginx/html/build
+
+
+

@@ -21,3 +21,6 @@ services:
 networks:
   react-django:
     name: react-django
+
+
+
