@@ -1,4 +1,4 @@
-use test
+use tekine
 
 CREATE TABLE IF NOT EXISTS ITEMS (
     name varchar(255) PRIMARY KEY,
