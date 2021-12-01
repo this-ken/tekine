@@ -11,7 +11,8 @@ EXPOSE 8000
 RUN apk update && \
     apk upgrade && \
     apk add --no-cache bash git python3 python3-dev py3-pip  gcc g++ mariadb-dev && \
-    pip3 install -r requirements.txt
+    pip3 install -r requirements.txt && \
+    chmod +x /root/entrypoint.sh    
 
 ENTRYPOINT ["/root/entrypoint.sh"]
 

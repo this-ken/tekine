@@ -15,8 +15,8 @@ RUN apk update && \
     pip3 install -r requirements.txt && \
     git clone https://github.com/this-ken/tekine && \
     cd /root/tekine/src/frontend && \
-    npm install && \
-    npm update --force
+    npm install
+    
 
 ENTRYPOINT ["/root/entrypoint.sh"]
 
