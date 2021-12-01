@@ -1,12 +1,12 @@
 #!/bin/bash
 
-cd /root/react-django/src/frontend
+cd /root/tekine/src/frontend
 npm start &
 
-cd /root/react-django/src/backend
+cd /root/tekine/src/backend
 
 while true; do
-    mysql -utest -ppassword -h mysql -e 'SHOW DATABASES;' > /dev/null 2>&1
+    mysql -uadmin -pkeikakuin1 -h db-01.cdvmoxmhpv0l.ap-northeast-1.rds.amazonaws.com -e 'SHOW DATABASES;' > /dev/null 2>&1
     if [ `echo $?` -eq 0 ]; then
         break
     fi

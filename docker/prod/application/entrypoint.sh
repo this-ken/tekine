@@ -1,4 +1,4 @@
-cd /root/react-django/src/backend
+cd /root/tekine/src/backend
 sleep 5
 python3 manage.py makemigrations --no-input
 python3 manage.py migrate
